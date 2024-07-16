@@ -7,27 +7,57 @@
 </head>
 <body>
         <button onclick="
-    console.log(cartQuantity);
+            console.log(cartQuantity);
         ">Show Quantity</button>
 
         <button onclick="
-    cartQuantity+=1;
-    console.log(cartQuantity);
-            ">+1</button>
+            if(cartQuantity+1>10)
+                console.log('Cart is full !')
+            else{
+            cartQuantity+=1;
+            console.log(cartQuantity);
+            }
+        ">+1</button>
 
         <button onclick="
-    cartQuantity+=2;
-    console.log(cartQuantity);
+             if(cartQuantity+2>10)
+            console.log('Cart is full !')
+            else{
+            cartQuantity+=2;
+            console.log(cartQuantity);
+            }
         ">+2</button>
 
         <button onclick="
-    cartQuantity+=3;
-    console.log(cartQuantity);
+            if(cartQuantity+3>10)
+            console.log('Cart is full !')
+            else{
+            cartQuantity+=3;
+            console.log(cartQuantity);
+            }
         ">+3</button>
 
         <button onclick="
-     cartQuantity=0;
-     console.log(cartQuantity);   
+            if(cartQuantity-1<0)
+            console.log('Cart is Empty !')
+            else{
+            cartQuantity-=1;
+            console.log(cartQuantity);
+            }
+        ">-1</button>
+
+        <button onclick="
+            if(cartQuantity-2<0)
+            console.log('Cart is Empty !')
+            else{
+            cartQuantity-=2;
+            console.log(cartQuantity);
+            }
+        ">-2</button>
+
+        <button onclick="
+            cartQuantity=0;
+            console.log(cartQuantity);   
         ">Reset</button>
 
     <script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Filp Game</title>
+</head>
+<body>
+  <script>
+    const coinFilp = Math.random();
+
+    if(coinFilp>=0.5)
+      result = 'Tails';
+    else
+      result = 'Heads';
+
+    const guess = 'Heads';
+    const messg = guess==result?'YouWin':'YouLoss';
+    alert(messg);
+  </script>
+</body>
+</html>
